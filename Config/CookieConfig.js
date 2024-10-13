@@ -4,7 +4,8 @@ const cookieConfig = {
     maxAge: 2592000000,
     secure: true,
     sameSite: 'none',
-    path: process.env.ORIGIN
+    domain: process.env.ORIGIN,
+    path: '/', 
 }
 
 module.exports = cookieConfig
