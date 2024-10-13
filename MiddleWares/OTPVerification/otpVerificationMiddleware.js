@@ -1,4 +1,4 @@
-const otp = require("../../Models/otp");
+const otp = require("../../Models/Otp");
 const users = require("../../Models/Users");
 
 async function CheckStatusVerifiedMiddleware(req, res, next) {

@@ -1,5 +1,5 @@
 const users = require("../Models/Users");
-const otp = require("../Models/otp");
+const otp = require("../Models/Otp");
 
 async function verifyOtp(req, res) {
     const { myOtp, findByEmail } = req.findOtp

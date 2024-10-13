@@ -1,7 +1,7 @@
 
 const nodemailer = require('nodemailer');
 const transportOptions = require('../Config/smtpTransport');
-const otp = require("../Models/otp");
+const otp = require("../Models/Otp");
 
 async function handleOtp(req, res) {
     const { otpEmail } = req;
