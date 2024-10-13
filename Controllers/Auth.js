@@ -1,4 +1,4 @@
-const cookieConfig = require('../Config/cookieConfig');
+const cookieConfig = require('../Config/CookieConfig');
 const users = require('../Models/Users');
 const { SetJsonToken } = require('../Utils/Auth');
 
