@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Your Password?</title>
+    <link rel="stylesheet" href="css/forgot.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            color: black;
+            font-weight: lighter;
+            font-family: sans-serif;
+            overflow: hidden;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh
+        }
+
+        .parent-container {
+            text-align: center;
+            width: 100%;
+            height: 20vh;
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .container h1 {
+            margin-left: 10px;
+        }
+
+        .parent-container h2 {
+            margin-top: 20px;
+        }
+
+        .parent-container p {
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+
+        .parent-container a {
+            text-decoration: none;
+            color: white;
+            background-color: #3f4396;
+            padding: 10px 20px 10px 20px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent-container">
+        <h2>Forgot your Password?</h2>
+        <p>To reset your password, click on the button below.</p>
+        <a href="http://localhost:5173/auth/reset-password/:userId/:jwtToken">Reset your password</a>
+    </div>
+</body>
+
+</html>
