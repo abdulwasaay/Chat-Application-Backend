@@ -1,4 +1,3 @@
-const cookieConfig = require('../Config/CookieConfig');
 const users = require('../Models/Users');
 const { SetJsonToken } = require('../Utils/Auth');
 
@@ -36,8 +35,7 @@ async function handleUserLogin(req, res) {
         const token = SetJsonToken(userPayload, '720h');
 
         if (token) {
-            res.cookie("token" , token , cookieConfig)
-            return res.status(200).send(userPayload)
+            return res.status(200).send({...userPayload , token})
         }
     } catch (err) {
         console.log(err)
