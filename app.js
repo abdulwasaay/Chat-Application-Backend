@@ -5,10 +5,9 @@ const dbConnect = require('./Connection.js');
 require('dotenv').config({ path: "./Config/.env" })
 const cors = require('cors');
 const corsOptions = require('./Config/corsConfig.js');
-const port =  process.env.PORT || 3000;
-const mongodbUrl = process.env.MONGODB_URL;
+const { portENV, mongodbUrlENV } = require('./Config/env.js');
 
-dbConnect(mongodbUrl)
+dbConnect(mongodbUrlENV)
 
 app.use(cors(corsOptions))
 
@@ -17,6 +16,6 @@ app.use(
     middleWares
 )
 
-app.listen(port, () => {
-    console.log(`Server is running on Port ${port}`)
+app.listen(portENV, () => {
+    console.log(`Server is running on Port ${portENV}`)
 })
